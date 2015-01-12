@@ -21,12 +21,12 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC \
   ; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN chown -R nobody:users /opt/NzbDrone \
-  ; mkdir -p /volumes/config/sonarr /volumes/completed /volumes/media \
-  && chown -R nobody:users /volumes
+  ; mkdir -p /config/sonarr /downloads /tv \
+  && chown -R nobody:users /config /downloads /tv
 
 EXPOSE 8989
 VOLUME /config
-VOLUME /completed
+VOLUME /downloads
 VOLUME /tv
 
 ADD develop/start.sh /
