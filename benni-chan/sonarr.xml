@@ -4,9 +4,9 @@
   <Description>
     Sonarr is a PVR for newsgroup users. It can monitor multiple RSS feeds for new episodes of your favourite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded if a better quality format becomes available.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : set this path to where you wish NzbDrone to store it's configuration.[br]
+    [b]/config[/b] : set this path to where you wish Sonarr to store it's configuration.[br]
     [b]/downloads[/b] : this path is used retrieve the downloaded files by your downloader application (e.g. SABnzbd or NZBGet)[br]
-    [b]/tv[/b] : set this path to where you wish NzbDrone move your TV episodes to.
+    [b]/tv[/b] : set this path to where you wish Sonarr move your TV episodes to.
   </Description>
   <Registry>https://registry.hub.docker.com/u/bennichan/unraid_sonarr/</Registry>
   <GitHub>https://github.com/Benni-chan/docker-sonarr</GitHub>
