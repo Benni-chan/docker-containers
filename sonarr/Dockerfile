@@ -21,7 +21,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC \
   ; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN chown -R nobody:users /opt/NzbDrone \
-  ; mkdir -p /config/sonarr /downloads /tv \
+  ; mkdir -p /config /downloads /tv \
   && chown -R nobody:users /config /downloads /tv
 
 EXPOSE 8989
